@@ -1,0 +1,11 @@
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  
+:root {
+  --primary: #3B4EF0;
+  --light-primary: #EEF0FE;
+  --accent: #0EA86A;
+  --text: #0F1117;
+  --gray: #f5f5f5;
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+}
