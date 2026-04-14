@@ -264,3 +264,47 @@ nav {
 .how h2 {
     color: var(--light-primary);
 }
+
+/* testimonials */
+.testimonials {
+    padding: 72px 48px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+ 
+.testimonials-label {
+    flex: 1;
+    min-width: 200px;
+}
+ 
+.testimonials-cards {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 280px;
+}
+ 
+.testimonial-card {
+    background: var(--primary);
+    color: var(--light-primary);
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    animation: fadeUp .6s ease both;
+}
+ 
+.testimonial-card:nth-child(2) { animation-delay: .15s; }
+ 
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.25);
+    flex-shrink: 0;
+}
+ 
