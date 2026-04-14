@@ -11,12 +11,19 @@
 <body>
  <nav>
     <div class="nav-logo">Work Center <span>Desk</span></div>
+
+    <button class="nav-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <ul class="nav-links">
       <li><a href="#features">Funcionalidades</a></li>
       <li><a href="#pricing">Preços</a></li>
       <li><a href="#testimonials">Depoimentos</a></li>
     </ul>
-    <a href="#pricing" class="btn-primary">Começar</a>
+    <a href="#pricing" class="btn-start">Começar</a>
   </nav>
 
    <section class="hero">
@@ -151,3 +158,9 @@
   </footer>
 </body>
 </html>
+
+<script>
+    function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('open');
+}
+</script>
