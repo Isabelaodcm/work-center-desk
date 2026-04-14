@@ -5,7 +5,6 @@ html { scroll-behavior: smooth; }
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: #0F1117;
     background: #F5F6FA;
     overflow-x: hidden;
 }
@@ -27,7 +26,7 @@ h4 {
 }
  
 p {
-    font-size: .78rem;
+    font-size: 15px;
 }
 
 a {
@@ -267,6 +266,7 @@ nav {
 
 /* testimonials */
 .testimonials {
+    background: #ebebf0;
     padding: 72px 48px;
     display: flex;
     align-items: center;
@@ -310,7 +310,6 @@ nav {
 
 /* precos */
 .pricing {
-    /* background: #ebebf0; */
     padding: 72px 48px;
     text-align: center;
 }
@@ -361,7 +360,7 @@ nav {
 
 .price-amount {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 2.6rem;
+    font-size: 40px;
     font-weight: 700;
     color: inherit;
     line-height: 1;
@@ -377,7 +376,6 @@ nav {
 .pricing-features li {
     font-size: .875rem;
     color: inherit;
-    opacity: .85;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -405,7 +403,49 @@ nav {
 }
  
 .cta-banner p {
-    font-size: .875rem;
+    font-size: 14px;
     color: var(--body);
     margin-bottom: 28px;
 }
+
+/* footer */
+footer {
+    background: var(--primary);
+    padding: 20px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+ 
+.footer-logo {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--light-primary);
+}
+ 
+.footer-logo span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+ 
+.footer-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+ 
+.footer-links a {
+    color: rgba(255,255,255,.75);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color .2s;
+}
+ 
+.footer-links a:hover { color: var(--text); }
+ 
