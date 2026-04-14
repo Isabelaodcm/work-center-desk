@@ -78,7 +78,7 @@ nav {
  
 .nav-links a:hover { color: #aeb7db;; }
  
-.btn-primary {
+.btn-primary, .btn-cta {
     background: var(--accent);
     color: var(--light-primary);
     padding: 10px 22px;
@@ -92,7 +92,7 @@ nav {
     display: inline-block;
 }
  
-.btn-primary:hover {
+.btn-primary:hover, .btn-cta:hover {
     background: #1e8f47;
     transform: translateY(-1px);
 }
@@ -307,4 +307,105 @@ nav {
     background: rgba(255,255,255,.25);
     flex-shrink: 0;
 }
+
+/* precos */
+.pricing {
+    /* background: #ebebf0; */
+    padding: 72px 48px;
+    text-align: center;
+}
  
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+ 
+.pricing-card {
+    border: 2px solid var(--accent);
+    background-color: var();
+    border-radius: 10px;
+    padding: 32px 36px;
+    min-width: 220px;
+    max-width: 260px;
+    flex: 1;
+    text-align: left;
+    transition: transform .2s, box-shadow .2s;
+}
+ 
+.pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(58,58,244,.15);
+}
+ 
+.pricing-card.featured {
+    background: var(--accent);
+    color: var(--light-primary);
+}
+ 
+.pricing-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: inherit;
+}
+ 
+.price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 24px;
+}
+
+.price-amount {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: inherit;
+    line-height: 1;
+}
+
+.pricing-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.pricing-features li {
+    font-size: .875rem;
+    color: inherit;
+    opacity: .85;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.pricing-features li::before {
+    content: '✓';
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 14px;
+}
+ 
+.pricing-card.featured .pricing-features li::before {
+      color: rgba(255,255,255,.9);
+}
+
+.cta-banner {
+    background: #ebebf0;
+    padding: 56px 48px;
+    text-align: center;
+}
+ 
+.cta-banner h2 {
+    margin-bottom: 8px;
+}
+ 
+.cta-banner p {
+    font-size: .875rem;
+    color: var(--body);
+    margin-bottom: 28px;
+}
